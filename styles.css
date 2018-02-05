@@ -4,52 +4,45 @@
 
 * {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 body {
-   margin: 0;
-   /* background-image: linear-gradient(to bottom right, blue, red); */
    background-color: black;
    font-family: "Poppins", sans-serif;
    font-weight: 200;
-   height: 100vh;
+   color: red;
+}
+
+.container {
+   position: relative;
+   width: 80%;
+   max-width: 1000px;
+   margin: 10% auto;
 }
 
 h1 {
-   margin-top: 75px;
-
-   color: red;
-
    font-size: 1rem;
    font-weight: 200;
+   width: 16em;
+   margin: 0 auto;
+   text-align: center;
 }
 
 h1 span {
    font-weight: 400;
 }
 
-.container {
-   position: relative;
-
-   width: 1000px;
+.text-container {
+   width: 16em;
    margin: 0 auto;
-}
-
-.click-me-text {
-   position: absolute;
-   bottom: -60px;
-   left: 34px;
-   color: red;
-
    font-size: 0.8rem;
 }
 
-.noise-icon {
-   position: absolute;
-   bottom: -49px;
-   left: 89px;
-
-   width: 22px;
+.click-me-text {
+   display: inline-block;
+   padding-right: 4px;
 }
 
 .mario-container-1, .mario-container-2 {
@@ -57,7 +50,7 @@ h1 span {
 
    width: 16em;
    height: 16em;
-   margin: 150px auto;
+   margin: 10% auto 2%;
 
    cursor: help;
 }
@@ -614,4 +607,37 @@ h1 span {
    13em 15em transparent,
    14em 15em transparent,
    15em 15em transparent;
+}
+
+/* BOTTOM NAVIGATION */
+
+.navigation {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+   height: 140px;
+   margin: 0 auto;
+
+   font-size: 2rem;
+}
+
+.navigation a:nth-child(2) {
+   padding: 0 30px;
+}
+
+.navigation a:hover {
+   cursor: pointer;
+   opacity: 1;
+   color: red;
+}
+
+.navigation a:active {
+   transform: translateY(1px);
+}
+
+a {
+   text-decoration: none;
+   opacity: 0.2;
+   color: red;
 }
