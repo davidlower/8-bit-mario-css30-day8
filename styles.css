@@ -53,6 +53,7 @@ h1 span {
    margin: 10% auto 2%;
 
    cursor: help;
+   user-select: none
 }
 
 .mario {
