@@ -612,11 +612,14 @@ h1 span {
 /* BOTTOM NAVIGATION */
 
 .navigation {
+   position: absolute;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
    display: flex;
    align-items: flex-end;
    justify-content: center;
 
-   height: 140px;
    margin: 0 auto;
 
    font-size: 2rem;
@@ -638,6 +641,16 @@ h1 span {
 
 a {
    text-decoration: none;
-   opacity: 0.2;
+   opacity: 0.6;
    color: red;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+   .navigation {
+      position: relative;
+      margin: 0 auto 5%;
+   }
 }
